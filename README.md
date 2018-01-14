@@ -144,7 +144,11 @@ Instalacja pakietu ruby-reek
 
 Reek to narzędzie, które bada klasy, moduły i metody Ruby, definiuje i raportuje wykryte „zapachy” w kodzie.
 
+<<<<<<< HEAD
 ![Reek](https://i.imgur.com/a/ScJRE.png)
+=======
+![Reek](https://i.imgur.com/R4vFerr.png)
+>>>>>>> efcd652e279481ba72381e076e232ea64a4f7ff2
 
 
 Instalacja via rubygems,
