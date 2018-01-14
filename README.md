@@ -144,18 +144,18 @@ Instalacja pakietu ruby-reek
 
 Reek to narzędzie, które bada klasy, moduły i metody Ruby, definiuje i raportuje wykryte „zapachy” w kodzie.
 
-![Reek] (https://imgur.com/a/ScJRE)
+![Reek](https://imgur.com/a/ScJRE)
 
 
 Instalacja via rubygems,
 Uruchomienie poprzez:  reek -options -dir_or_source_file
 
-![Instalacja Reek'a] (https://imgur.com/mDPyGLj)
+![Instalacja Reek'a](https://imgur.com/mDPyGLj)
 
 
 #### 2.5. RubyCritic
 
-![RubyCritic] (https://imgur.com/iMZInvs)
+![RubyCritic](https://imgur.com/iMZInvs)
 
 RubyCritic to narzędzie, które dostarcza raport jakości kodu Ruby (analiza statystyczna gemów, takich jak np. Reek, Flay, Flog etc.)
 
@@ -176,10 +176,10 @@ A: 40%
 B: 20%
 C: 40%
 
-![Statystyka początkowa] (https://imgur.com/Yy2RJBw) 
+![Statystyka początkowa](https://imgur.com/Yy2RJBw) 
 
 Wykryte code smells:
 
-![Tabela z wykrytymi code smells] (https://imgur.com/Kkgg7XO) 
+![Tabela z wykrytymi code smells](https://imgur.com/Kkgg7XO) 
 
 
