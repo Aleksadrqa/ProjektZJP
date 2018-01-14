@@ -8,5 +8,4 @@ source 'https://rubygems.org' do
     gem 'iconv'
     gem 'churn'
     gem 'bundler' 
-
 end
