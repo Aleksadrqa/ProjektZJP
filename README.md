@@ -189,13 +189,21 @@ Wykryte code smells:
 #### 3. Refaktoryzacja - bierzące zmiany w kodzie.
 
 Na początku była ciemność. I nasz kod. Pierwotnie kod miał wiele smelli. 
+
 ![smell1](https://i.imgur.com/kI9m19F.png)
 ![smell2](https://i.imgur.com/nGV8yrg.png)
 ![smell3](https://i.imgur.com/R5AoOfh.png)
+
 Refaktoryzację rozpoczęłam od usunięcia smelli w pliiku cell.rb. Na pierwszy ogień wzięłam smell Uncommunicative Variable Name. Napisane testy oczywiście przeszły.
+
 ![Test](https://i.imgur.com/6vLtDz3.png)
+
 Oczywiście liczba smelli się zmniejszyła w każdym z plików.
+
 ![NAME](https://i.imgur.com/LCHOgUq.png)
 ![wogo](https://i.imgur.com/tML4VT8.png)
-Kolejnym krokiem była zmiana attr_accessor na attr_reader. Oczywiście i smelle zniknęły i testy przeszły.
+
+Kolejnym krokiem była zmiana attr_accessor na attr_reader. 
+Oczywiście i smelle zniknęły i testy przeszły.
+
 ![Smell](https://i.imgur.com/QsimFRq.png)
