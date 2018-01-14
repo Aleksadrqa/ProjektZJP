@@ -1,7 +1,7 @@
 # Structure of cell. Contains coordinates x and y.
 class Cell
   
-  attr_accessor :wartosc_x, :wartosc_y
+    attr_reader :wartosc_x, :wartosc_y
   
   # Constructor.
   # @param wartosc_x 
