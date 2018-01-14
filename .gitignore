@@ -1,4 +1,2 @@
-*.swm
-*.swn
-*.swc
-*.swp
+*.gem
+*.rbc
