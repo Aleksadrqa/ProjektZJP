@@ -27,9 +27,9 @@ Twórcą `The Game of life` jest John Conway- brytyjski matematyk.
 
 Gra w życie rozgrywana jest na bardzo dużej kwadratowej planszy reprezentowanej przez macierz nxn. Komórki (elementy) macierzy mogą przyjmować dwie wartości oznaczające odpowiednio: komórkę zamieszkaną (żywą) albo komórkę niezamieszkaną (martwą). Każda komórka ma ośmiu sąsiadów, włączając komórki po przekątnej.
 
-![Warianty gry0] (https://i.imgur.com/oXHPd7F.png)
-![Warianty gry1] (https://i.imgur.com/uAwmpRE)
-![Warianty gry2] (https://i.imgur.com/uAwmpRE) 
+![Warianty gry0](https://i.imgur.com/oXHPd7F.png)
+![Warianty gry1](https://i.imgur.com/uAwmpRE.png)
+![Warianty gry2](https://i.imgur.com/uAwmpRE.png) 
 
 Rys. Game of life- przykładowe warianty gry.
 
@@ -116,4 +116,4 @@ Breedery (ang. rozpłodnik, hodowca) natomiast to puffery o bardzo złożonym za
 
 ![Breeder](https://i.imgur.com/fdoSnCg)
 
-Rys. Przykład breeder’a.# solid-pop
+Rys. Przykład breeder’a.
