@@ -1,7 +1,7 @@
 # Structure of cell. Contains coordinates x and y.
 class Cell
-  
-    attr_reader :wartosc_x, :wartosc_y
+ # :reek:DuplicateMethodCall { allow_calls: ['prime * result'] }
+   attr_reader :wartosc_x, :wartosc_y
   
   # Constructor.
   # @param wartosc_x 

@@ -144,18 +144,18 @@ Instalacja pakietu ruby-reek
 
 Reek to narzędzie, które bada klasy, moduły i metody Ruby, definiuje i raportuje wykryte „zapachy” w kodzie.
 
-![Reek](https://imgur.com/a/ScJRE)
+![Reek](https://i.imgur.com/a/ScJRE.png)
 
 
 Instalacja via rubygems,
 Uruchomienie poprzez:  reek -options -dir_or_source_file
 
-![Instalacja Reek'a](https://imgur.com/mDPyGLj)
+![Instalacja Reek'a](https://i.imgur.com/mDPyGLj.png)
 
 
-#### 2.5. RubyCritic
+#### 2.2. RubyCritic
 
-![RubyCritic](https://imgur.com/iMZInvs)
+![RubyCritic](https://i.imgur.com/iMZInvs.png)
 
 RubyCritic to narzędzie, które dostarcza raport jakości kodu Ruby (analiza statystyczna gemów, takich jak np. Reek, Flay, Flog etc.)
 
@@ -176,10 +176,16 @@ A: 40%
 B: 20%
 C: 40%
 
-![Statystyka początkowa](https://imgur.com/Yy2RJBw) 
+![Statystyka początkowa](https://i.imgur.com/Yy2RJBw.png) 
 
 Wykryte code smells:
 
-![Tabela z wykrytymi code smells](https://imgur.com/Kkgg7XO) 
+![Tabela z wykrytymi code smells](https://i.imgur.com/Kkgg7XO.png) 
 
+#### 3. Refaktoryzacja - bierzące zmiany w kodzie.
 
+Na początku była ciemność. I nasz kod. Pierwotnie kod miał wiele smelli. 
+![smell1](https://i.imgur.com/kI9m19F.png)
+![smell2]()
+![smell3]()
+g
