@@ -31,17 +31,17 @@ class Board
   # Add new cell to board if it isn't there.
   # @param x
   # @param y
-  def add_cell(x, y)
-    cell = Cell.new(x, y)    
+  def add_cell(wartosc_x, wartosc_y)
+    cell = Cell.new(wartosc_x, wartosc_y)    
     @current_state[cell.hash_code] = cell
   end
   
   # Remove cell from board.
   # @param x
   # @param y
-  def remove_cell(x, y)
-    #@current_state.delete_if {|key, value| value == Cell.new(x, y) }
-    @current_state.delete(Cell.new(x, y).hash_code)
+  def remove_cell(wartosc_x, wartosc_y)
+    #@current_state.delete_if {|key, value| value == Cell.new(wartosc_x, wartosc_y) }
+    @current_state.delete(Cell.new(wartosc_x, wartosc_y).hash_code)
   end
   
   # Print board as string
@@ -53,10 +53,10 @@ class Board
   # @param x
   # @param y
   # @return boolean
-  def is_cell_exist(x, y)
-    #@current_state.contains(Cell.new(x, y))
-    #@current_state.any? {|k| k == (Cell.new(x, y)).hash_code}
-    @current_state.has_value?(Cell.new(x, y))
+  def is_cell_exist(wartosc_x, wartosc_y)
+    #@current_state.contains(Cell.new(wartosc_x, wartosc_y))
+    #@current_state.any? {|k| k == (Cell.new(wartosc_x, wartosc_y)).hash_code}
+    @current_state.has_value?(Cell.new(wartosc_x, wartosc_y))
   end
   
   # Return current amount of cells on board.
@@ -73,14 +73,14 @@ class Board
     tmp_neighbours = 0
         
     @current_state.each do |key, cell|
-      tmp_neighbours = count_neighbours(cell.x, cell.y)
+      tmp_neighbours = count_neighbours(cell.wartosc_x, cell.wartosc_y)
       if tmp_neighbours < 2 || tmp_neighbours > 3
         # add cell to kill queue
         add_cell_to_next_state_kill_life(cell)
       end
       
       # checking if dead neighbours can be born
-      give_life_to_neighbours_if_possible(cell.x, cell.y)
+      give_life_to_neighbours_if_possible(cell.wartosc_x, cell.wartosc_y)
 
       # clear temp Hash used in above method
       @tmp_checked_cell.clear
@@ -90,20 +90,20 @@ class Board
     while @next_state_kill_life.size > 0 
       # Retrieves and removes the head of this queue, or returns null if this queue is empty.
       tmp_cell = @next_state_kill_life.pop
-      remove_cell(tmp_cell.x, tmp_cell.y)
+      remove_cell(tmp_cell.wartosc_x, tmp_cell.wartosc_y)
     end
     
     # born cells
     while @next_state_give_life.size > 0
       tmp_cell = @next_state_give_life.pop
-      add_cell(tmp_cell.x, tmp_cell.y)
+      add_cell(tmp_cell.wartosc_x, tmp_cell.wartosc_y)
     end
   end
   
   # Check if dead neighbours can be born. Only dead cells which had 3 living neighbours can be born.
   # @param x
   # @param y
-  def give_life_to_neighbours_if_possible(x, y)
+  def give_life_to_neighbours_if_possible(wartosc_x, wartosc_y)
     @counter_method_give_life_to_neighbours_if_possible += 1
 
     # 1,1 2,1 3,1
@@ -115,29 +115,29 @@ class Board
     for i in 0..7 
       case i
         when 0
-          tmp_x = x - 1
-          tmp_y = y - 1
+          tmp_x = wartosc_x - 1
+          tmp_y = wartosc_y - 1
         when 1
-          tmp_x = x
-          tmp_y = y - 1
+          tmp_x = wartosc_x
+          tmp_y = wartosc_y - 1
         when 2
-          tmp_x = x + 1
-          tmp_y = y - 1
+          tmp_x = wartosc_x + 1
+          tmp_y = wartosc_y - 1
         when 3
-          tmp_x = x - 1
-          tmp_y = y
+          tmp_x = wartosc_x - 1
+          tmp_y = wartosc_y
         when 4
-          tmp_x = x + 1
-          tmp_y = y
+          tmp_x = wartosc_x + 1
+          tmp_y = wartosc_y
         when 5
-          tmp_x = x - 1
-          tmp_y = y + 1
+          tmp_x = wartosc_x - 1
+          tmp_y = wartosc_y + 1
         when 6
-          tmp_x = x
-          tmp_y = y + 1          
+          tmp_x = wartosc_x
+          tmp_y = wartosc_y + 1          
         when 7
-          tmp_x = x + 1
-          tmp_y = y + 1
+          tmp_x = wartosc_x + 1
+          tmp_y = wartosc_y + 1
       end
 
       cell = Cell.new(tmp_x, tmp_y) 
@@ -157,40 +157,40 @@ class Board
   # @param x
   # @param y
   # @return int
-  def count_neighbours(x, y)
+  def count_neighbours(wartosc_x, wartosc_y)
     # 1,1 2,1 3,1
     # 1,2 2,2 3,2
     # 1,3 2,3 3,3    
     neighbours = 0
 
-    if is_cell_exist(x - 1, y - 1)
+    if is_cell_exist(wartosc_x - 1, wartosc_y - 1)
       neighbours += 1
     end
 
-    if is_cell_exist(x, y - 1)
+    if is_cell_exist(wartosc_x, wartosc_y - 1)
       neighbours += 1
     end
-    if is_cell_exist(x + 1, y - 1)
-      neighbours += 1
-    end
-
-    if is_cell_exist(x - 1, y)
+    if is_cell_exist(wartosc_x + 1, wartosc_y - 1)
       neighbours += 1
     end
 
-    if is_cell_exist(x + 1, y)
+    if is_cell_exist(wartosc_x - 1, wartosc_y)
       neighbours += 1
     end
 
-    if is_cell_exist(x - 1, y + 1)
+    if is_cell_exist(wartosc_x + 1, wartosc_y)
       neighbours += 1
     end
 
-    if is_cell_exist(x, y + 1)
+    if is_cell_exist(wartosc_x - 1, wartosc_y + 1)
       neighbours += 1
     end
 
-    if is_cell_exist(x + 1, y + 1)
+    if is_cell_exist(wartosc_x, wartosc_y + 1)
+      neighbours += 1
+    end
+
+    if is_cell_exist(wartosc_x + 1, wartosc_y + 1)
       neighbours += 1
     end
 

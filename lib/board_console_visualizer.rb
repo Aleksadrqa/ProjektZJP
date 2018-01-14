@@ -41,7 +41,7 @@ class BoardConsoleVisualizer < Board
     puts
     
     @current_state.each do |key, cell|
-      puts "X: #{cell.x}, Y: #{cell.y}"
+      puts "X: #{cell.wartosc_x}, Y: #{cell.wartosc_y}"
     end
     
     puts "Cells on board #{@current_state.size}"
