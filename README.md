@@ -144,7 +144,11 @@ Instalacja pakietu ruby-reek
 
 Reek to narzędzie, które bada klasy, moduły i metody Ruby, definiuje i raportuje wykryte „zapachy” w kodzie.
 
+<<<<<<< HEAD
+![Reek](https://i.imgur.com/a/ScJRE.png)
+=======
 ![Reek](https://i.imgur.com/R4vFerr.png)
+>>>>>>> efcd652e279481ba72381e076e232ea64a4f7ff2
 
 
 Instalacja via rubygems,
@@ -153,7 +157,7 @@ Uruchomienie poprzez:  reek -options -dir_or_source_file
 ![Instalacja Reek'a](https://i.imgur.com/mDPyGLj.png)
 
 
-#### 2.5. RubyCritic
+#### 2.2. RubyCritic
 
 ![RubyCritic](https://i.imgur.com/iMZInvs.png)
 
@@ -182,4 +186,24 @@ Wykryte code smells:
 
 ![Tabela z wykrytymi code smells](https://i.imgur.com/Kkgg7XO.png) 
 
+#### 3. Refaktoryzacja - bierzące zmiany w kodzie.
 
+Na początku była ciemność. I nasz kod. Pierwotnie kod miał wiele smelli. 
+
+![smell1](https://i.imgur.com/kI9m19F.png)
+![smell2](https://i.imgur.com/nGV8yrg.png)
+![smell3](https://i.imgur.com/R5AoOfh.png)
+
+Refaktoryzację rozpoczęłam od usunięcia smelli w pliiku cell.rb. Na pierwszy ogień wzięłam smell Uncommunicative Variable Name. Napisane testy oczywiście przeszły.
+
+![Test](https://i.imgur.com/6vLtDz3.png)
+
+Oczywiście liczba smelli się zmniejszyła w każdym z plików.
+
+![NAME](https://i.imgur.com/LCHOgUq.png)
+![wogo](https://i.imgur.com/tML4VT8.png)
+
+Kolejnym krokiem była zmiana attr_accessor na attr_reader. 
+Oczywiście i smelle zniknęły i testy przeszły.
+
+![Smell](https://i.imgur.com/QsimFRq.png)
