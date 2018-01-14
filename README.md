@@ -117,3 +117,69 @@ Breedery (ang. rozpłodnik, hodowca) natomiast to puffery o bardzo złożonym za
 ![Breeder](https://i.imgur.com/fdoSnCg.png) 
 
 Rys. Przykład breeder’a.
+
+
+2. Proces refaktoryzacji
+
+
+Refaktoryzacja, to zmiana organizacji struktury kodu programu, jednak z zachowaniem integralności jego działania.
+
+Proces ten ułatwia budowę i pielęgnację oprogramowania, umożliwiając utrzymanie systemu komputerowego w stanie pozwalającym na łatwą rozbudowę. Refaktoryzacja jest jednak procesem czasochłonnym i podatnym na błędy, wobec czego pożądana jest jej automatyzacja. Stworzenie niezawodnych i wydajnych narzędzi wspierających programistów w tym zadaniu jest niezbędnym warunkiem do tego, by refaktoryzacja mogła stać się powszechnie przyjętą techniką tworzenia i pielęgnacji programów. 
+
+
+
+#### 2.1. Kod
+
+Wybrane repozytorium: (https://github.com/andersondias/conway-game-of-life-ruby)  
+
+Instalacja konfiguracja środowiska
+Instalacja Ruby na Ubuntu 16.04.3 LTS
+ → ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-linux] (poprzez rvm),
+Instalacja Bundler’a
+
+Konfiguracja Git’a
+Powiązanie się z kontem na GitHub’ie,
+
+Instalacja pakietu ruby-reek
+
+Reek to narzędzie, które bada klasy, moduły i metody Ruby, definiuje i raportuje wykryte „zapachy” w kodzie.
+
+![Reek] (https://imgur.com/a/ScJRE)
+
+
+Instalacja via rubygems,
+Uruchomienie poprzez:  reek -options -dir_or_source_file
+
+![Instalacja Reek'a] (https://imgur.com/mDPyGLj)
+
+
+#### 2.5. RubyCritic
+
+![RubyCritic] (https://imgur.com/iMZInvs)
+
+RubyCritic to narzędzie, które dostarcza raport jakości kodu Ruby (analiza statystyczna gemów, takich jak np. Reek, Flay, Flog etc.)
+
+Instalacja parsera,
+Instalacja gem’a RubyCritic,
+Instalacja gem’a ffi,
+Instalacja gem’a iconv,
+gem install churn
+Instalacja Bundler’a:
+gem install bundler
+bundle install
+bundle
+
+
+I. Statystyki kodu przed refaktoryzacją (stan początkowy):
+
+A: 40%
+B: 20%
+C: 40%
+
+![Statystyka początkowa] (https://imgur.com/Yy2RJBw) 
+
+Wykryte code smells:
+
+![Tabela z wykrytymi code smells] (https://imgur.com/Kkgg7XO) 
+
+
