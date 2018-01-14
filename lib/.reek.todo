@@ -1,0 +1,3 @@
+DuplicateMethodCall:
+  allow_calls:
+  - 'prime * result'
