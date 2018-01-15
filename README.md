@@ -204,6 +204,17 @@ Oczywiście liczba smelli się zmniejszyła w każdym z plików.
 ![wogo](https://i.imgur.com/tML4VT8.png)
 
 Kolejnym krokiem była zmiana attr_accessor na attr_reader. 
-Oczywiście i smelle zniknęły i testy przeszły.
+Oczywiście i smelle zniknęły i testy przeszły. 
+
+Pozostał jedynie smrodek informujący o powtarzającej się metodzie, który na razie zostawiłam.
 
 ![Smell](https://i.imgur.com/QsimFRq.png)
+
+W następnym kroku przeszłam do refaktoryzacji pliku board_console_visualizer.rb. Początkowo plik miał 13 zapachów. 
+
+![13](https://i.imgur.com/NS6iiXl.png)
+
+Udało mi się kilka z nich usunąć. Oczywiście cały czas puszczam testy po każdej zmianie.
+
+![14](https://i.imgur.com/rYiISKW.png)
+
