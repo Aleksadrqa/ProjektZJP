@@ -194,7 +194,6 @@ bundle
 
 
 I. Statystyki kodu przed refaktoryzacją (stan początkowy):
-
 A: 40%
 B: 20%
 C: 40%
@@ -244,4 +243,13 @@ Utworzenie pliku konfiguracyjnego, w którym zostały zamieszczone pozwolenia na
 
 ![15](https://i.imgur.com/zZjjUb4.png)
 ![meh](https://i.imgur.com/rpYIq0f.png)
+<<<<<<< HEAD
 >>>>>>> 41d7adfda515b7d2a3e790e42edae62a37c13e73
+=======
+
+Następnie do pliku konfiguracyjnego dodałam zapis, który ma ignorować jednoliterowe nazwy iteratorów. Kto widział kod, gdzie iterator jest inny niż i czy j? Jednak reekowi to przeszkadzało. Myślę, że iterator musi mieć taką, a nie inną nazwę, aby kod był czytelny.
+
+Po takich zmianach w kodzie, zostało mi 11 smelli. Oczywiście wciąż wszystkie testy działają.
+
+![iteratory](https://i.imgur.com/kabupjX.png)
+>>>>>>> c8d746eb7a4112c0a2296bcbde3a51a14b66f546
