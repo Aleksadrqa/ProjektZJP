@@ -221,3 +221,4 @@ Udało mi się kilka z nich usunąć. Oczywiście cały czas puszczam testy po k
 Utworzenie pliku konfiguracyjnego, w którym zostały zamieszczone pozwolenia na zdublowany kod pozwoliło na usunięcie następnych smelli.
 
 ![15](https://i.imgur.com/zZjjUb4.png)
+![meh](https://i.imgur.com/rpYIq0f.png)
