@@ -144,7 +144,7 @@ Instalacja pakietu ruby-reek
 
 Reek to narzędzie, które bada klasy, moduły i metody Ruby, definiuje i raportuje wykryte „zapachy” w kodzie.
 
-<<<<<<< HEAD
+
 ![Reek](https://i.imgur.com/a/ScJRE.png)
 =======
 ![Reek](https://i.imgur.com/R4vFerr.png)
@@ -156,8 +156,27 @@ Uruchomienie poprzez:  reek -options -dir_or_source_file
 
 ![Instalacja Reek'a](https://i.imgur.com/mDPyGLj.png)
 
+#### 2.2. Code smells
 
-#### 2.2. RubyCritic
+Pierwsze testy oraz analiza w narzędziu RubyCritic wykazała występowanie błędów:
+
+![Smells](https://i.imgur.com/5ds0h5y.png) 
+
+Zostały wykryte następujące rodzaje smell’i:
+
+DuplicateMethodCall
+FeatureEnvy
+HighComplexity
+IrresponsibleModule
+NestedIterators
+PrimaDonnaMethod
+TooManyStatements
+UncommunicativeParameterName
+UncommunicativeVariableName
+VeryHighComplexity
+
+
+#### 2.5. RubyCritic
 
 ![RubyCritic](https://i.imgur.com/iMZInvs.png)
 
@@ -175,7 +194,6 @@ bundle
 
 
 I. Statystyki kodu przed refaktoryzacją (stan początkowy):
-
 A: 40%
 B: 20%
 C: 40%
@@ -186,6 +204,9 @@ Wykryte code smells:
 
 ![Tabela z wykrytymi code smells](https://i.imgur.com/Kkgg7XO.png) 
 
+<<<<<<< HEAD
+
+=======
 #### 3. Refaktoryzacja - bierzące zmiany w kodzie.
 
 Na początku była ciemność. I nasz kod. Pierwotnie kod miał wiele smelli. 
@@ -222,9 +243,13 @@ Utworzenie pliku konfiguracyjnego, w którym zostały zamieszczone pozwolenia na
 
 ![15](https://i.imgur.com/zZjjUb4.png)
 ![meh](https://i.imgur.com/rpYIq0f.png)
+<<<<<<< HEAD
+>>>>>>> 41d7adfda515b7d2a3e790e42edae62a37c13e73
+=======
 
 Następnie do pliku konfiguracyjnego dodałam zapis, który ma ignorować jednoliterowe nazwy iteratorów. Kto widział kod, gdzie iterator jest inny niż i czy j? Jednak reekowi to przeszkadzało. Myślę, że iterator musi mieć taką, a nie inną nazwę, aby kod był czytelny.
 
 Po takich zmianach w kodzie, zostało mi 11 smelli. Oczywiście wciąż wszystkie testy działają.
 
 ![iteratory](https://i.imgur.com/kabupjX.png)
+>>>>>>> c8d746eb7a4112c0a2296bcbde3a51a14b66f546
