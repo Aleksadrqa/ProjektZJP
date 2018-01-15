@@ -1,6 +1,6 @@
 require_relative 'board'
 require_relative 'i_board_visualizer'
-
+#wyswietlanie planszy
 class BoardConsoleVisualizer < Board
   include IBoardVisualizer
   
