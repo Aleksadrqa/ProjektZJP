@@ -144,11 +144,10 @@ Instalacja pakietu ruby-reek
 
 Reek to narzędzie, które bada klasy, moduły i metody Ruby, definiuje i raportuje wykryte „zapachy” w kodzie.
 
-<<<<<<< HEAD
+
 ![Reek](https://i.imgur.com/a/ScJRE.png)
-=======
+
 ![Reek](https://i.imgur.com/R4vFerr.png)
->>>>>>> efcd652e279481ba72381e076e232ea64a4f7ff2
 
 
 Instalacja via rubygems,
@@ -156,8 +155,40 @@ Uruchomienie poprzez:  reek -options -dir_or_source_file
 
 ![Instalacja Reek'a](https://i.imgur.com/mDPyGLj.png)
 
+#### 2.2. Code smells
 
-#### 2.2. RubyCritic
+Pierwsze testy oraz analiza w narzędziu RubyCritic wykazała występowanie błędów:
+
+![Codesmells](https://i.imgur.com/5ds0h5y.png)
+
+
+DuplicateMethodCall
+FeatureEnvy
+HighComplexity
+IrresponsibleModule
+NestedIterators
+PrimaDonnaMethod
+TooManyStatements
+UncommunicativeParameterName
+UncommunicativeVariableName
+VeryHighComplexity
+
+#### 2.3. Gemfile
+
+Gemfile to plik, który tworzymy, który służy do opisywania zależności gemów dla programów Ruby. 
+
+Gemfile powinien zawsze znajdować się w katalogu głównym projektu, to jest miejsce, w którym Bundler się tego spodziewa i jest standardowym miejscem do umieszczania plików stylu menedżera pakietów.
+
+Gemfile jest oceniany jako kod Ruby. Kiedy oceniany przez Bundler kontekst, w którym się znajduje, pozwala nam uzyskać dostęp do pewnych metod, które wykorzystujemy do wyjaśnienia naszych wymagań dotyczących gemów.
+
+![Gemfile](https://i.imgur.com/WbTrbVW.png)
+
+#### 2.4. Testy
+
+Do przeprowadzania testów na wybranym przez nas kodzie korzystaliśmy z gotowych, standardowych testów: basic_unit_tests.rb oraz basic_unit_tests.rb.swp 
+
+
+#### 2.5. RubyCritic
 
 ![RubyCritic](https://i.imgur.com/iMZInvs.png)
 
@@ -185,6 +216,16 @@ C: 40%
 Wykryte code smells:
 
 ![Tabela z wykrytymi code smells](https://i.imgur.com/Kkgg7XO.png) 
+
+
+
+II. Statystyki kodu po kilku pierwszych zmianach i eliminacji niektórych zapachów:
+A: 50 %
+B: 16.67 %
+C: 33.33 %
+
+![Statystyka w trakcie](https://i.imgur.com/IvKWqs6.png)
+
 
 #### 3. Refaktoryzacja - bierzące zmiany w kodzie.
 
