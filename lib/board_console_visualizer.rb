@@ -1,6 +1,6 @@
 require_relative 'board'
 require_relative 'i_board_visualizer'
-
+#wyswietlanie planszy
 class BoardConsoleVisualizer < Board
   include IBoardVisualizer
   
@@ -11,7 +11,7 @@ class BoardConsoleVisualizer < Board
   attr_reader :time_sleep
   
   # If true then write on console information about coordinates of all cells after each state of loop in play_game method.
-  attr_accessor :display_current_coordinates
+  attr_reader :display_current_coordinates
   
   # Constructor with settings.
   # @param area_size Integer
