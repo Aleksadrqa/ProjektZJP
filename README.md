@@ -225,4 +225,6 @@ Utworzenie pliku konfiguracyjnego, w którym zostały zamieszczone pozwolenia na
 
 Następnie do pliku konfiguracyjnego dodałam zapis, który ma ignorować jednoliterowe nazwy iteratorów. Kto widział kod, gdzie iterator jest inny niż i czy j? Jednak reekowi to przeszkadzało. Myślę, że iterator musi mieć taką, a nie inną nazwę, aby kod był czytelny.
 
-![iteratory](https://i.imgur.com/IJOydg7.png)
+Po takich zmianach w kodzie, zostało mi 11 smelli. Oczywiście wciąż wszystkie testy działają.
+
+![iteratory](https://i.imgur.com/kabupjX.png)
