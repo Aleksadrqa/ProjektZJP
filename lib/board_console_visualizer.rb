@@ -8,7 +8,7 @@ class BoardConsoleVisualizer < Board
   attr_accessor :area_size
   
   # Milliseconds between next refresh of game state.
-  attr_accessor :time_sleep
+  attr_reader :time_sleep
   
   # If true then write on console information about coordinates of all cells after each state of loop in play_game method.
   attr_accessor :display_current_coordinates
@@ -85,7 +85,7 @@ class BoardConsoleVisualizer < Board
         print_current_state_coordinates()
       end
       
-      sleep(@time_sleep/1000.0)      
+      sleep(@time_sleep/1001.0)      
     end
   end
     
