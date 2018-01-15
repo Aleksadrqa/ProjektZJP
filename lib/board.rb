@@ -113,8 +113,8 @@ class Board
     tmp_y = 0;
 
     for i in 0..7 
-      case i
-        when 0
+	  case i
+        when 0 
           tmp_x = wartosc_x - 1
           tmp_y = wartosc_y - 1
         when 1
@@ -139,7 +139,7 @@ class Board
           tmp_x = wartosc_x + 1
           tmp_y = wartosc_y + 1
       end
-
+      
       cell = Cell.new(tmp_x, tmp_y) 
 
       # checking is cell already checked and negative of cell because checking if only dead cell can be born

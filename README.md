@@ -156,28 +156,6 @@ Uruchomienie poprzez:  reek -options -dir_or_source_file
 
 ![Instalacja Reek'a](https://i.imgur.com/mDPyGLj.png)
 
-
-Refaktoryzacja - bierzące zmiany w kodzie:
-Na początku była ciemność. I nasz kod. Pierwotnie kod miał wiele smelli. 
-
-![smell1](https://i.imgur.com/kI9m19F.png)
-![smell2](https://i.imgur.com/nGV8yrg.png)
-![smell3](https://i.imgur.com/R5AoOfh.png)
-
-Refaktoryzację rozpoczęłam od usunięcia smelli w pliiku cell.rb. Na pierwszy ogień wzięłam smell Uncommunicative Variable Name. Napisane testy oczywiście przeszły.
-
-![Test](https://i.imgur.com/6vLtDz3.png)
-
-Oczywiście liczba smelli się zmniejszyła w każdym z plików.
-
-![NAME](https://i.imgur.com/LCHOgUq.png)
-![wogo](https://i.imgur.com/tML4VT8.png)
-
-Kolejnym krokiem była zmiana attr_accessor na attr_reader. 
-Oczywiście i smelle zniknęły i testy przeszły.
-
-![Smell](https://i.imgur.com/QsimFRq.png)
-
 #### 2.2. Code smells
 
 Pierwsze testy oraz analiza w narzędziu RubyCritic wykazała występowanie błędów:
@@ -227,4 +205,43 @@ Wykryte code smells:
 
 ![Tabela z wykrytymi code smells](https://i.imgur.com/Kkgg7XO.png) 
 
+<<<<<<< HEAD
 
+=======
+#### 3. Refaktoryzacja - bierzące zmiany w kodzie.
+
+Na początku była ciemność. I nasz kod. Pierwotnie kod miał wiele smelli. 
+
+![smell1](https://i.imgur.com/kI9m19F.png)
+![smell2](https://i.imgur.com/nGV8yrg.png)
+![smell3](https://i.imgur.com/R5AoOfh.png)
+
+Refaktoryzację rozpoczęłam od usunięcia smelli w pliiku cell.rb. Na pierwszy ogień wzięłam smell Uncommunicative Variable Name. Napisane testy oczywiście przeszły.
+
+![Test](https://i.imgur.com/6vLtDz3.png)
+
+Oczywiście liczba smelli się zmniejszyła w każdym z plików.
+
+![NAME](https://i.imgur.com/LCHOgUq.png)
+![wogo](https://i.imgur.com/tML4VT8.png)
+
+Kolejnym krokiem była zmiana attr_accessor na attr_reader. 
+Oczywiście i smelle zniknęły i testy przeszły. 
+
+Pozostał jedynie smrodek informujący o powtarzającej się metodzie, który na razie zostawiłam.
+
+![Smell](https://i.imgur.com/QsimFRq.png)
+
+W następnym kroku przeszłam do refaktoryzacji pliku board_console_visualizer.rb. Początkowo plik miał 13 zapachów. 
+
+![13](https://i.imgur.com/NS6iiXl.png)
+
+Udało mi się kilka z nich usunąć. Oczywiście cały czas puszczam testy po każdej zmianie.
+
+![14](https://i.imgur.com/rYiISKW.png)
+
+Utworzenie pliku konfiguracyjnego, w którym zostały zamieszczone pozwolenia na zdublowany kod pozwoliło na usunięcie następnych smelli.
+
+![15](https://i.imgur.com/zZjjUb4.png)
+![meh](https://i.imgur.com/rpYIq0f.png)
+>>>>>>> 41d7adfda515b7d2a3e790e42edae62a37c13e73
