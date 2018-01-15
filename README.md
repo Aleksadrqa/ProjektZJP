@@ -222,3 +222,7 @@ Utworzenie pliku konfiguracyjnego, w którym zostały zamieszczone pozwolenia na
 
 ![15](https://i.imgur.com/zZjjUb4.png)
 ![meh](https://i.imgur.com/rpYIq0f.png)
+
+Następnie do pliku konfiguracyjnego dodałam zapis, który ma ignorować jednoliterowe nazwy iteratorów. Kto widział kod, gdzie iterator jest inny niż i czy j? Jednak reekowi to przeszkadzało. Myślę, że iterator musi mieć taką, a nie inną nazwę, aby kod był czytelny.
+
+![iteratory](https://i.imgur.com/IJOydg7.png)
