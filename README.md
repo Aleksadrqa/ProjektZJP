@@ -175,6 +175,19 @@ UncommunicativeParameterName
 UncommunicativeVariableName
 VeryHighComplexity
 
+#### 2.3. Gemfile
+
+Gemfile to plik, który tworzymy, który służy do opisywania zależności gemów dla programów Ruby. 
+
+Gemfile powinien zawsze znajdować się w katalogu głównym projektu, to jest miejsce, w którym Bundler się tego spodziewa i jest standardowym miejscem do umieszczania plików stylu menedżera pakietów.
+
+Gemfile jest oceniany jako kod Ruby. Kiedy oceniany przez Bundler kontekst, w którym się znajduje, pozwala nam uzyskać dostęp do pewnych metod, które wykorzystujemy do wyjaśnienia naszych wymagań dotyczących gemów.
+
+![Gemfile](https://i.imgur.com/WbTrbVW.png)
+
+#### 2.4. Testy
+
+Do przeprowadzania testów na wybranym przez nas kodzie korzystaliśmy z gotowych, standardowych testów: basic_unit_tests.rb oraz basic_unit_tests.rb.swp 
 
 #### 2.5. RubyCritic
 
@@ -204,7 +217,13 @@ Wykryte code smells:
 
 ![Tabela z wykrytymi code smells](https://i.imgur.com/Kkgg7XO.png) 
 
-<<<<<<< HEAD
+
+II. Statystyki kodu po kilku pierwszych zmianach i eliminacji niektórych zapachów:
+A: 50 %
+B: 16.67 %
+C: 33.33 %
+
+![Statystyka w trakcie](https://i.imgur.com/IvKWqs6.png)
 
 =======
 #### 3. Refaktoryzacja - bierzące zmiany w kodzie.
