@@ -224,7 +224,8 @@ A: 50 %
 B: 16.67 %
 C: 33.33 %
 
-![Statystyka w trakcie](https://i.imgur.com/IvKWqs6.png)
+![Statystyka w trakcie](https://i.imgur.com/0IMN4fv.png)
+Statystyka po skróceniu case'a- counter_method_give_life_to_neighbours_if_possible += 1 
 
 
 #### 3. Refaktoryzacja - bierzące zmiany w kodzie.
