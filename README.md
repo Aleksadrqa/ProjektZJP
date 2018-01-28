@@ -5,8 +5,8 @@
 
 #### Grupa “POP”:
 
-Piotr Lisek
 Aleksandra Burkiewicz
+
 Patrycja Cieślak
 
 
@@ -291,3 +291,5 @@ Jak można zauważyć funkcja ta miała również powtarzające się sekcje. Prz
 Jeszcze tylko wyświetlenie, czy na pewno smrodek "Too Many Statements" nie występuje.
 
 ![smrod](https://i.imgur.com/Hg47uLg.png)
+
+Oczywiście po wprowadzeniu zmian zostały uruhomione testy, które oczywiście przeszły. 
