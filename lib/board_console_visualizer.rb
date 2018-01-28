@@ -67,26 +67,30 @@ class BoardConsoleVisualizer < Board
   
   # Play game in infinity loop.
   def play_game
-    display_current_state_of_board()
     
-    if @display_current_state_of_board
-      print_current_state_coordinates()
-    end
-    
-    sleep(@time_sleep/1000.0)
+    curent_state_coordinates()
     
     while true
       system 'cls'
       
       next_state()
-      display_current_state_of_board()
       
-      if @display_current_state_of_board
-        print_current_state_coordinates()
-      end
-      
-      sleep(@time_sleep/1001.0)      
+      curent_state_coordinates()
+         
     end
   end
+  
+  def curent_state_coordinates
+  
+	display_current_state_of_board()
+	
+	if @display_current_state_of_board
+      print_current_state_coordinates()
+    end
+	
+	sleep(@time_sleep/1000.0)
+	
+  end
+ 
     
 end
