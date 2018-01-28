@@ -277,3 +277,5 @@ Następnie reek wyczuł, że nie jest opisane, co klasa robi. Napisałam więc t
 Następnie zmieniłam attr_accessor na attr_reader.
 
 ![atrr](https://i.imgur.com/kElPH2K.png)
+
+dhsadd
