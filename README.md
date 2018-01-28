@@ -294,3 +294,15 @@ Jeszcze tylko wyświetlenie, czy na pewno smrodek "Too Many Statements" nie wyst
 ![smrod](https://i.imgur.com/Hg47uLg.png)
 
 Oczywiście po wprowadzeniu zmian zostały uruhomione testy, które oczywiście przeszły. 
+
+Nastpnym krokiem było zajęcie się ponownie problemem z zbyt wieloma pętlami, zbyt wysokim skomplikowaniem kodu. Również reek tego nie wyczuł, jednak kod był wielokrotnie powielony (praktycznie to samo w każdym z ifów). 
+
+![nieladne_ify](https://i.imgur.com/Vv66mJ1.png)
+
+Zwinęłam ten fragment kodu do podwójnego fora przy wykorzstaniu dwóch tablich po których iteruję - może niezbyt najlepsze rozwiązanie, jednak bardziej czytelne i przyjazne dla oka. 
+
+![piekne_rzeczy](https://i.imgur.com/VJvfS0d.png)
+
+Reek oczywiście dla poprawionego fragmentu kodu nie ma więcej zastrzeżeń. 
+
+![reek](https://i.imgur.com/rKW8nuk.png)
