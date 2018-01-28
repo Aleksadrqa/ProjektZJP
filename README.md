@@ -309,3 +309,6 @@ Zwinęłam ten fragment kodu do podwójnego fora przy wykorzstaniu dwóch tablic
 Reek oczywiście dla poprawionego fragmentu kodu nie ma więcej zastrzeżeń. 
 
 ![reek](https://i.imgur.com/rKW8nuk.png)
+
+Na podobnej zasadzie pozbyłam się zapachu z fragmentu kodu, który sprawdza czy martwy sąsiad innej komórki może się odrodzić. Jedynie martwe komórki posiadające 3 sąsiadów mogą odrodzić się na nowo. Wykorzystana w tym fragmencie konstrukcja case-when była dość rozwlekła. "Zwinęłam" ją do poniższego rozwiązania:
+![case](https://i.imgur.com/28oUUy0.png) 
