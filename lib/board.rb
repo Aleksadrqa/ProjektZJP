@@ -151,8 +151,6 @@ class Board
 		end
 	end
 	
-    
-
     return neighbours
   end
   
