@@ -228,6 +228,9 @@ C: 33.33 %
 Statystyka po skróceniu case'a- counter_method_give_life_to_neighbours_if_possible += 1 
 
 
+![Końcowe statystyki](https://i.imgur.com/M2oLxxe.png) 
+Końcowe statystyki refaktoryzacji wybranego kodu.
+
 #### 3. Refaktoryzacja - bierzące zmiany w kodzie.
 
 Na początku była ciemność. I nasz kod. Pierwotnie kod miał wiele smelli. 
