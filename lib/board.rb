@@ -140,37 +140,17 @@ class Board
     # 1,3 2,3 3,3    
     neighbours = 0
 
-    if is_cell_exist(wartosc_x - 1, wartosc_y - 1)
-      neighbours += 1
-    end
-
-    if is_cell_exist(wartosc_x, wartosc_y - 1)
-      neighbours += 1
-    end
-    if is_cell_exist(wartosc_x + 1, wartosc_y - 1)
-      neighbours += 1
-    end
-
-    if is_cell_exist(wartosc_x - 1, wartosc_y)
-      neighbours += 1
-    end
-
-    if is_cell_exist(wartosc_x + 1, wartosc_y)
-      neighbours += 1
-    end
-
-    if is_cell_exist(wartosc_x - 1, wartosc_y + 1)
-      neighbours += 1
-    end
-
-    if is_cell_exist(wartosc_x, wartosc_y + 1)
-      neighbours += 1
-    end
-
-    if is_cell_exist(wartosc_x + 1, wartosc_y + 1)
-      neighbours += 1
-    end
-
+	values_x = [-1,0,1]
+	values_y = [-1,0,1]
+	
+	for i in 0..2
+		for j in 0..2
+			if is_cell_exist(wartosc_x + values_x[i], wartosc_y + values_y[j])
+				neighbours +=1
+			end
+		end
+	end
+	
     return neighbours
   end
   
