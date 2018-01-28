@@ -282,12 +282,12 @@ Po ostatnich zajęciach, na których byłyśmy jedynie słuchaczami podczas, gdy
 
 Pierwszym, poważnym problemem, z którym miałyśmy do czynienia była funkcja, która miała zbyt skomplikowaną strukturę: smell o nazwie Too Many Statements. Wyglądała ona w ten sposób:
 
-[funkcja](https://i.imgur.com/hIQJYgw.png)
+![funkcja](https://i.imgur.com/hIQJYgw.png)
 
 Jak można zauważyć funkcja ta miała również powtarzające się sekcje. Przeniosłam je do nowej, innej funkcji, w której zebrałam powtarzane czynności i po prostu jest ona wywoływana dwukrotnie. Reek oczywiście wyczuł, że wywołuję to samo dwukrotnie, jednak myślę, że w takiej formie jest to bardziej czytelne.
 
-[poprawiona_funkcja](https://i.imgur.com/mPsoV3B.png)
+![poprawiona_funkcja](https://i.imgur.com/mPsoV3B.png)
 
 Jeszcze tylko wyświetlenie, czy na pewno smrodek "Too Many Statements" nie występuje.
 
-[smrod](https://i.imgur.com/Hg47uLg.png)
+![smrod](https://i.imgur.com/Hg47uLg.png)
