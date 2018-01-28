@@ -278,4 +278,4 @@ Następnie zmieniłam attr_accessor na attr_reader.
 
 ![atrr](https://i.imgur.com/kElPH2K.png)
 
-dhsadd
+Po ostatnich zajęciach, na których byłyśmy jedynie słuchaczami podczas, gdy inne grupy przedstawiały swoje dokonania, które miały za zadanie ułatwienie zrozumienia kodu, z którym pracowali, doszłyśmy do wniosku, że źle podeszłyśmy do problemu refaktoringu. Dlatego też, w tej części, postaramy się popracować z kodem na tyle, aby rzeczywiście był czytelny, a nie, aby tylko "uciszyć" reeka, żeby nie krzyczał o poważnych problemach, które pierwotnie pominęłyśmy. Zdecydowałyśmy się skopiować całe repozytorium, aby pracować z nim dalej oraz, aby tamte "dokonania" były wyraźnie widoczne oraz, aby porównać ostatecznie nasze podejścia. 
