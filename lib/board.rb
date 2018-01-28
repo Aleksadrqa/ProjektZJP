@@ -111,35 +111,12 @@ class Board
     # 1,3 2,3 3,3
     tmp_x = 0;
     tmp_y = 0;
+    x_coeff = [-1, 0, 1, -1, 1, -1, 0, 1]
+    y_coeff = [-1, -1, -1, 0, 0, 1, 1, 1]
+    for i in 0..7
+         tmp_x = wartosc_x + x_coeff[i]
+         tmp_y = wartosc_y + y_coeff[i]
 
-    for i in 0..7 
-	  case i
-        when 0 
-          tmp_x = wartosc_x - 1
-          tmp_y = wartosc_y - 1
-        when 1
-          tmp_x = wartosc_x
-          tmp_y = wartosc_y - 1
-        when 2
-          tmp_x = wartosc_x + 1
-          tmp_y = wartosc_y - 1
-        when 3
-          tmp_x = wartosc_x - 1
-          tmp_y = wartosc_y
-        when 4
-          tmp_x = wartosc_x + 1
-          tmp_y = wartosc_y
-        when 5
-          tmp_x = wartosc_x - 1
-          tmp_y = wartosc_y + 1
-        when 6
-          tmp_x = wartosc_x
-          tmp_y = wartosc_y + 1          
-        when 7
-          tmp_x = wartosc_x + 1
-          tmp_y = wartosc_y + 1
-      end
-      
       cell = Cell.new(tmp_x, tmp_y) 
 
       # checking is cell already checked and negative of cell because checking if only dead cell can be born
